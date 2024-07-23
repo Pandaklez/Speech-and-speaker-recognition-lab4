@@ -3,16 +3,6 @@ course assignment
 
 deep_speech_2016.ipynb -- main results
 
-### Results on test with *default* alpha and beta values:
-
-```
-Average CTC loss: 0.6938
-
-Test set with Greedy Decoder: Average CER: 0.152721 Average WER: 0.5541
-
-Test set with pyCTC Decoder: Average CER: 0.169338 Average WER: 0.3616
-```
-
 ### Comparing results with and without language model:
 
 Subjectively, adding language models obviously recognizes better some words, like turnine "ave" into "of", "P R O S E S S" into "proves" (however, the target was "proves this") etc. So it's good for shaping words that almost right into grammatical form wihtout misspellings, but sometimes it predicts it wrong. For example, it's bad for recognizing unique names.
